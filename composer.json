@@ -1,0 +1,15 @@
+{
+    "name": "sculpin/tailwind-blog-skeleton",
+    "description": "Tailwind-based Skeleton for Sculpin",
+    "type": "project",
+    "require": {
+        "sculpin/sculpin": "^3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Boyd",
+            "email": "kevin.boyd@gmail.com"
+        }
+    ]
+}

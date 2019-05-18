@@ -1,0 +1,29 @@
+<html>
+<head><title>{{site.title}}</title></head>
+<link rel="stylesheet" href="/build/app.css"/>
+<body>
+<nav class="bg-pink-800 text-white pt-2 pb-2 pl-4 uppercase text-lg flex flex-col md:flex-row">
+    <a href="/" class="block font-black mr-4">{{ site.title }}</a>
+    <a href="/posts/" class="block mr-4">Posts</a>
+    <a href="/posts/category/" class="block mr-4 pl-2 text-sm">Categories</a>
+    <a href="/posts/tags/" class="block mr-4 pl-2 text-sm">Tags</a>
+    <a href="/about/" class="block mr-4">About</a>
+</nav>
+
+<div class="container flex flex-col md:flex-row flex-col-reverse">
+    <div class="ml-5 md:ml-10 md:w-1/5 pt-10">
+        <img src="/assets/icons/jackson/196x196.png">
+        <strong class="uppercase block mt-4 mb-2">Contact Info</strong>
+        <a href="" class="block pb-2">twitter.com/username</a>
+        <a href="" class="block pb-2">phpc.social/@username</a>
+        <a href="" class="block pb-2">flickr.com/photos/username</a>
+        <p>Email: username [at] domain.com</p>
+    </div>
+    <div class="md:ml-5 md:mr-5">
+        {% block content_wrapper %}{% block content '' %}{% endblock content_wrapper %}
+    </div>
+</div>
+
+<footer></footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@tailwind base;
+
+p {
+    @apply pb-4;
+}
+
+a {
+    @apply text-blue-700;
+}
+
+
+a:hover {
+    @apply text-blue-400;
+}
+
+a:visited {
+    @apply text-purple-500;
+}
+
+nav a,
+nav a:hover,
+nav a:visited {
+    @apply text-white;
+}
+
+@tailwind components;
+
+@tailwind utilities;
