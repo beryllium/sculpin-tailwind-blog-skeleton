@@ -8,7 +8,8 @@ Encore
     // .copyFiles({
     //     from: './source/assets/icons'
     // })
-    .addStyleEntry('app', './source/assets/css/app.css')
+    .addStyleEntry('css/app', './source/assets/css/app.css')
+    .addEntry('js/app', './source/assets/js/app.js')
     .enablePostCssLoader()
     .disableSingleRuntimeChunk()
 

@@ -1,5 +1,6 @@
 ---
-title: Welcome to my Blog!
+title: My Latest Blog Post!
+subtitle: Behold. It is my best work.
 tags:
     - sculpin
     - markdown

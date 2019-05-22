@@ -2,10 +2,10 @@
 
 {% block content_wrapper %}
 <article>
-  <header>
-    <h2 class="uppercase">{{ page.title }}</h2>
+  <header class="bg-gray-100 pt-4 md:pt-7 pb-4 md:pb-7 mb-4">
+    <h2 class="uppercase font-black text-xl">{{ page.title }}</h2>
   {% if page.subtitle %}
-    <h3 class="subtitle">{{ page.subtitle }}</h3>
+    <h3 class="capitalize text-gray-700 font-light">{{ page.subtitle }}</h3>
   {% endif %}
   </header>
   <section class="main_body">
@@ -13,15 +13,16 @@
   </section>
   <section class="taxonomies">
     <div class="taxonomy">
-        <a href="{{site.url }}/posts/tags">Tags</a>:
+        <strong><a href="{{site.url }}/posts/tags">Tags</a>:</strong>
         {% for tag in page.tags %}
         <a href="{{ site.url }}/posts/tags/{{ tag }}">
             {{ tag }}
         </a>{% if not loop.last %}, {% endif %}
         {% endfor %}
-      </div>    <div class="taxonomy">
-        <a href="{{site.url }}/posts/category">Category</a>:
-        {% for category in page.category %}
+      </div>
+      <div class="taxonomy">
+        <strong><a href="{{site.url }}/posts/category">Category</a>:</strong>
+        {% for category in page.categories %}
         <a href="{{ site.url }}/posts/category/{{ category }}">
             {{ category }}
         </a>{% if not loop.last %}, {% endif %}
@@ -29,7 +30,7 @@
       </div>
   </section>
   <footer>
-    <p class="published_date">Published: {{page.date|date('F j, Y')}}</p>
+      <p class="published_date"><strong>Published:</strong> <em>{{page.date|date('F j, Y')}}</em></p>
   </footer>
 </article>
 {% endblock content_wrapper %}

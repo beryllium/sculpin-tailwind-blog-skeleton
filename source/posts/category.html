@@ -4,9 +4,9 @@ use: [posts_categories]
 ---
 <h1>Category</h1>
 <ul>
-    {% for category,posts in data.posts_categories %}
+    {% for category,posts in data.posts_categories|sort|reverse %}
         <li>
-            <a href="/posts/category/{{ category|url_encode(true) }}">{{ category }}</a>
+            <a href="/posts/category/{{ category|url_encode(true) }}">{{ category }}</a> ({{posts|length}})
         </li>
     {% endfor %}
 </ul>

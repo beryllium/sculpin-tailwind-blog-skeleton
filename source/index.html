@@ -20,9 +20,10 @@ use:
         <div>
             {{ post.blocks.content|raw }}
         </div>
+        <p class="published_date pb-1"><strong>Published:</strong> <em>{{page.date|date('F j, Y')}}</em></p>
         {% if post.meta.tags %}
         <p>
-            <strong class="block">Tags:</strong>
+            <strong>Tags:</strong>
             {% for tag in post.meta.tags %}
             <a href="{{ site.url }}/posts/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
