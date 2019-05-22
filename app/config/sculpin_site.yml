@@ -1,4 +1,8 @@
 title: "Sculpin Blog"
 subtitle: "Your New Website"
-google_analytics_tracking_id: ''
 url: ''
+google_analytics_tracking_id: ''
+
+# Insert your disqus shortname
+#disqus:
+#    shortname:

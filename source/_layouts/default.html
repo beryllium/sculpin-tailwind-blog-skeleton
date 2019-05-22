@@ -1,7 +1,41 @@
-<html>
-<head><title>{{site.title}}</title></head>
-<link rel="stylesheet" href="/build/css/app.css"/>
-<script type="text/javascript" src="/build/js/app.js"></script>
+<!DOCTYPE html>
+<html class="h-full">
+<head>
+    <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% block head_meta %}
+    <meta name="robots" content="noindex, follow">
+    {% endblock %}
+    <link rel="apple-touch-startup-image" href="{{ site.url }}/build/2048x2048.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="76x76" href="{{ site.url }}/build/jackson/76x76.png">
+    <link rel="shortcut icon" sizes="120x120" href="{{ site.url }}/build/jackson/120x120.png">
+    <link rel="shortcut icon" sizes="128x128" href="{{ site.url }}/build/jackson/128x128.png">
+    <link rel="shortcut icon" sizes="152x152" href="{{ site.url }}/build/jackson/152x152.png">
+    <link rel="shortcut icon" sizes="196x196" href="{{ site.url }}/build/jackson/196x196.png">
+    <link rel="shortcut icon" sizes="512x512" href="{{ site.url }}/build/jackson/512x512.png">
+    <link rel="shortcut icon" sizes="1024x1024" href="{{ site.url }}/build/jackson/1024x1024.png">
+    <link rel="shortcut icon" sizes="2048x2048" href="{{ site.url }}/build/jackson/2048x2048.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/build/jackson/76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/build/jackson/120x120.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="{{ site.url }}/build/jackson/128x128.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/build/jackson/152x152.png">
+    <link rel="apple-touch-icon" sizes="196x196" href="{{ site.url }}/build/jackson/196x196.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="{{ site.url }}/build/jackson/512x512.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="{{ site.url }}/build/jackson/1024x1024.png">
+    <link rel="apple-touch-icon" sizes="2048x2048" href="{{ site.url }}/build/jackson/2048x2048.png">
+
+    <link rel="stylesheet" href="{{ site.url }}/build/css/app.css"/>
+
+    <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" />
+
+    {% block head_styles %}
+    {% endblock %}
+    {% block head_scripts %}
+    {% endblock %}
+</head>
 <body class="antialiased flex flex-col h-full">
 <nav class="flex items-center justify-between flex-wrap bg-pink-800 p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -34,7 +68,7 @@
 
 <div class="container flex flex-1 md:flex-row flex-col-reverse">
     <div class="ml-5 md:ml-10 md:mr-5 md:w-1/5 pt-10">
-        <img src="/assets/icons/jackson/196x196.png" class="img-flip border-solid rounded-lg border-pink-800 border-2 p-2 shadow-md mx-auto md:mx-0">
+        <img src="{{ site.url }}/assets/icons/jackson/196x196.png" class="img-flip border-solid rounded-lg border-pink-800 border-2 p-2 shadow-md mx-auto md:mx-0">
         <strong class="block uppercase mt-10 md:mt-8 mb-2">Contact Info</strong>
         <a href="" class="block pb-2">twitter.com/username</a>
         <a href="" class="block pb-2">phpc.social/@username</a>
@@ -47,7 +81,31 @@
 </div>
 
 <footer class="w-full text-right border-t border-gray-400 p-3 pin-b">
-    Powered by <a href="https://sculpin.io">Sculpin</a>
+    <a href="{{site.url}}/atom.xml">RSS</a>
+    <span class="pr-2 pl-2">/</span>
+    <span class="opacity-50">Powered by <a href="https://sculpin.io">Sculpin</a></span>
 </footer>
+
+<script type="text/javascript" src="{{ site.url }}/build/js/app.js"></script>
+
+{% block scripts %}
+{% endblock %}
+
+{% if site.google_analytics_tracking_id %}
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{{site.google_analytics_tracking_id}}', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+{% endif %}
+
+{% block scripts_after %}
+{% endblock %}
 </body>
 </html>

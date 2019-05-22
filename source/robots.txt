@@ -1,0 +1,9 @@
+---
+permalink: none
+---
+
+User-agent: *
+Disallow: /posts/tags/
+Disallow: /posts/category/
+
+Sitemap: {{ site.url }}/sitemap.xml
