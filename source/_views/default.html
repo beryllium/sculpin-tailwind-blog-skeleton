@@ -2,7 +2,7 @@
 <head><title>{{site.title}}</title></head>
 <link rel="stylesheet" href="/build/css/app.css"/>
 <script type="text/javascript" src="/build/js/app.js"></script>
-<body class="antialiased">
+<body class="antialiased flex flex-col h-full">
 <nav class="flex items-center justify-between flex-wrap bg-pink-800 p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
         <a href="/" class="font-black text-xl tracking-tight uppercase">
@@ -32,7 +32,7 @@
     </div>
 </nav>
 
-<div class="container flex flex-col md:flex-row flex-col-reverse">
+<div class="container flex flex-1 md:flex-row flex-col-reverse">
     <div class="ml-5 md:ml-10 md:mr-5 md:w-1/5 pt-10">
         <img src="/assets/icons/jackson/196x196.png" class="img-flip border-solid rounded-lg border-pink-800 border-2 p-2 shadow-md mx-auto md:mx-0">
         <strong class="block uppercase mt-10 md:mt-8 mb-2">Contact Info</strong>
@@ -46,6 +46,8 @@
     </div>
 </div>
 
-<footer></footer>
+<footer class="w-full text-right border-t border-gray-400 p-3 pin-b">
+    Powered by <a href="https://sculpin.io">Sculpin</a>
+</footer>
 </body>
 </html>
