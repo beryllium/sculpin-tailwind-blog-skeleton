@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[Sculpin Blog]]></title>
+    <link href="/atom.xml" rel="self"/>
+    <link href="/"/>
+    <updated>2019-05-25T09:25:43-07:00</updated>
+    <id>/</id>
+        <author><name><![CDATA[Sculpin Blog]]></name></author>
+        <generator uri="http://sculpin.io/">Sculpin</generator>
+        <entry>
+        <title type="html"><![CDATA[My Latest Blog Post!]]></title>
+        <link href="/2019/03/01/welcome-to-my-blog"/>
+        <updated>2019-03-01T00:00:00-08:00</updated>
+        <id>/2019/03/01/welcome-to-my-blog</id>
+        <content type="html"><![CDATA[<p>Welcome to my new Blog!</p>
+
+<p>This is a statically generated website based on <a href="http://sculpin.io/">Sculpin</a> and <a href="https://tailwindcss.com">TailwindCSS</a>.</p>
+
+<p>One of its many great features is that it lets me write my blog posts in <a href="https://michelf.ca/projects/php-markdown/extra/">PHP Markdown "Extra"</a>, which adds a few extra features to John Gruber's <a href="https://daringfireball.net/projects/markdown/">original Markdown syntax</a>.</p>
+
+<p>Thanks for reading!</p>
+]]></content>
+    </entry>
+        <entry>
+        <title type="html"><![CDATA[Sample Post]]></title>
+        <link href="/2019/02/01/test-post"/>
+        <updated>2019-02-01T00:00:00-08:00</updated>
+        <id>/2019/02/01/test-post</id>
+        <content type="html"><![CDATA[<p>This is a sample post.</p>
+]]></content>
+    </entry>
+    </feed>
