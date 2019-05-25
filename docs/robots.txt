@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /posts/tags/
 Disallow: /posts/category/
 
-Sitemap: /sitemap.xml
+Sitemap: https://beryllium.github.io/sculpin-tailwind-blog-skeleton-demo//sitemap.xml
