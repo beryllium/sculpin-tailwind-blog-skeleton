@@ -1,7 +1,15 @@
 title: "Sculpin Blog"
 subtitle: "Your New Website"
 url: '/sculpin-tailwind-blog-skeleton-demo'
+author: '[insert name here]'
 google_analytics_tracking_id: ''
+
+# Social info
+social:
+  twitter: getsculpin
+  mastodon: php.social/@getsculpin
+  email: username [at] domain.com
+  flickr: https://www.flickr.com/photos/beryllium
 
 # Insert your disqus shortname
 #disqus:

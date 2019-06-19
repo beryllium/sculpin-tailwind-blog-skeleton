@@ -8,7 +8,7 @@ use:
 - posts
 ---
 
-<p class="bg-gray-100 p-8 mb-4 font-light italic">Hi, I'm [insert name here]. Thanks for visiting my blog!</p>
+<p class="bg-gray-100 p-8 mb-4 font-light italic">Hi, I'm {{ site.author }}. Thanks for visiting my blog!</p>
 
 {% for post in page.pagination.items %}
     <article class="pt-6">

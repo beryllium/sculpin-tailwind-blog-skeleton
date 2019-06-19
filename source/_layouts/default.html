@@ -70,10 +70,18 @@
     <div class="ml-5 md:ml-10 md:mr-5 md:w-1/5 pt-10">
         <img src="{{ site.url }}/build/jackson/196x196.png" class="img-flip border-solid rounded-lg border-pink-800 border-2 p-2 shadow-md mx-auto md:mx-0">
         <strong class="block uppercase mt-10 md:mt-8 mb-2">Contact Info</strong>
-        <a href="" class="block pb-2">twitter.com/username</a>
-        <a href="" class="block pb-2">phpc.social/@username</a>
-        <a href="" class="block pb-2">flickr.com/photos/username</a>
-        <p><strong>Email:</strong> username [at] domain.com</p>
+        {% if site.social.twitter is defined %}
+        <a href="https://twitter.com/{{site.social.twitter}}" class="block pb-2">twitter.com/{{site.social.twitter}}</a>
+        {% endif %}
+        {% if site.social.mastodon is defined %}
+        <a href="https://{{site.social.mastodon}}" class="block pb-2">{{site.social.mastodon}}</a>
+        {% endif %}
+        {% if site.social.flickr is defined %}
+        <a href="{{site.social.flickr}}" class="block pb-2">My Flickr Photos</a>
+        {% endif %}
+        {% if site.social.email is defined %}
+        <p><strong>Email:</strong> {{site.social.email}}</p>
+        {% endif %}
     </div>
     <div class="md:ml-5 md:mr-5">
         {% block content_wrapper %}{% block content '' %}{% endblock content_wrapper %}
