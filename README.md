@@ -9,6 +9,12 @@ you can quickly get up and running with your own copy by clicking the
 ["Use This Template"](https://github.com/beryllium/sculpin-tailwind-blog-skeleton/generate)
 button in the GitHub interface.
 
+Alternatively, you can use Composer to create the project:
+
+```
+composer create-project beryllium/sculpin-tailwind-blog-skeleton my-blog
+```
+
 ## Getting Up And Running
 
 After cloning your generated template to your local disk, you'll need to

@@ -1,5 +1,5 @@
 {
-    "name": "sculpin/blog-skeleton",
+    "name": "beryllium/sculpin-tailwind-blog-skeleton",
     "description": "Tailwind-based Skeleton for Sculpin",
     "type": "sculpin-skeleton",
     "license": "MIT",
@@ -9,12 +9,8 @@
     "authors": [
         {
             "name": "Kevin Boyd",
-            "email": "kevin.boyd@gmail.com"
-        },
-        {
-            "name": "Beau Simensen",
-            "email": "beau@dflydev.com",
-            "homepage": "http://beausimensen.com"
+            "email": "kevin.boyd@gmail.com",
+            "homepage": "https://whateverthing.com"
         }
     ],
     "scripts": {
