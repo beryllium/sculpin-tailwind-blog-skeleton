@@ -4,6 +4,11 @@ Sculpin Tailwind Blog Skeleton
 This GitHub repository provides a skeleton implementation of a Sculpin
 blog site using the Tailwind CSS library.
 
+To view a demo of what the skeleton looks like by default, please visit
+the GitHub demo page:
+
+[https://beryllium.github.io/sculpin-tailwind-blog-skeleton/](https://beryllium.github.io/sculpin-tailwind-blog-skeleton/)
+
 The repository is configured to be used as a "template repository", so
 you can quickly get up and running with your own copy by clicking the
 ["Use This Template"](https://github.com/beryllium/sculpin-tailwind-blog-skeleton/generate)
