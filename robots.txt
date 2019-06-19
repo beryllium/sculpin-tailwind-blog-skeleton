@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /posts/tags/
 Disallow: /posts/category/
 
-Sitemap: /sculpin-tailwind-blog-skeleton-demo/sitemap.xml
+Sitemap: /sculpin-tailwind-blog-skeleton/sitemap.xml
